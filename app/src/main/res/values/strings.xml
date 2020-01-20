@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">BankingSystem</string>
+    <string name="banking_system">Banking System</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="wrong_user_details">Wrong User Details</string>
+    <string name="enter_all_the_details">Enter All Details</string>
+    <string name="enter_the_password_properly">Enter Password Properly</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="account_no">Account No.</string>
+    <string name="deposit">Deposit</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="amount_to_debit">Amount To Debit</string>
+    <string name="transaction">Transaction</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="balance">Balance</string>
+    <string name="customer_details">Customer Details</string>
+    <string-array name="Role">
+        <item>Manager</item>
+        <item>Customer</item>
+    </string-array>
+    <string name="title_activity_manager_dash_board">ManagerDashBoard</string>
+    <string name="enter_all_details">Enter All Details</string>
+    <string name="password_is_less_than_6">Password is Less than 6</string>
+    <string name="user_not_added">User Not Added</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="customer_not_added">Customer Not Added</string>
+    <string name="account_no_updated">Account No. Updated</string>
+    <string name="account_no_not_updated">Account No. Not Updated</string>
+    <string name="balance_updated">Balance Updated</string>
+    <string name="balance_not_updated">Balance Not Updated</string>
+    <string name="password_matched_correctly">Password matched correctly</string>
+    <string name="user_does_not_exist">User Does Not Exist</string>
+    <string name="validation_done">Validation Done</string>
+    <string name="password_mis_matched">Password MisMatched</string>
+    <string name="user_added_successfully">User Added Successfully</string>
+    <string name="not_enough_balance">Not Enough Balance</string>
+    <string name="customer_not_available">Customer Not Available</string>
+    <string name="customer_cannot_log_in">Customer cannot LogIn</string>
+    <string name="input_fields_validated">Input Fields Validated</string>
+    <string name="enter_phone_no">Enter Phone No.</string>
+    <string name="nxt_prefix">NXT</string>
+    <string name="account_no_not_assigned">No Account No. Assigned yet</string>
+</resources>

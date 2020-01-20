@@ -1,0 +1,65 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.bankingsystemkotlinpractice"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:5:5-24:19
+12        android:allowBackup="true"
+12-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.0.2] /home/parulr/.gradle/caches/transforms-2/files-2.1/59634bf3360427ef7f7373ad7fa95cb2/core-1.0.2/AndroidManifest.xml:22:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.bankingsystemkotlinpractice.SignInActivity" >
+21-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:12:9-18:20
+21-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:12:19-49
+22            <intent-filter>
+22-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:14:17-69
+23-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:14:25-66
+24                <action android:name="android.intent.action.VIEW" />
+24-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:15:17-68
+24-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:15:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:16:17-77
+26-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.bankingsystemkotlinpractice.TransactionActivity" />
+29-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:19:9-56
+29-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:19:19-54
+30        <activity android:name="com.example.bankingsystemkotlinpractice.CustomerDetailActivity" />
+30-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:20:9-60
+30-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:20:19-57
+31        <activity android:name="com.example.bankingsystemkotlinpractice.ManagerDashBoard" />
+31-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:21:9-54
+31-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:21:19-51
+32        <activity android:name="com.example.bankingsystemkotlinpractice.SignUpActivity" />
+32-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:22:9-52
+32-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:22:19-49
+33        <activity android:name="com.example.bankingsystemkotlinpractice.BaseActivity" />
+33-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:23:9-49
+33-->/home/parulr/Data/AndroidStudioProjects/BankingSystemKotlinPractice/app/src/main/AndroidManifest.xml:23:19-47
+34    </application>
+35
+36</manifest>

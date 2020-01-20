@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomerDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textViewCustomerRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/customer_details"
+            android:textSize="@dimen/header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <EditText
+            android:id="@+id/editTextCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textViewCustomerRecord"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="@+id/textViewCustomerRecord"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCustomerRecord" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextCustomerName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextCustomerName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCustomerName"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <EditText
+            android:id="@+id/editTextAccountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/account_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhoneNo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhoneNo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNo"
+            app:layout_constraintVertical_bias="0.006" />
+
+        <TextView
+            android:id="@+id/textViewBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:text="@string/balance"
+            app:layout_constraintStart_toStartOf="@+id/editTextAccountNo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAccountNo" />
+
+        <EditText
+            android:id="@+id/editTextBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewBalance"
+            app:layout_constraintStart_toEndOf="@+id/textViewBalance"
+            app:layout_constraintTop_toTopOf="@+id/textViewBalance"
+            app:layout_constraintVertical_bias="0.769" />
+
+        <Button
+            android:id="@+id/buttonDeposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/header_bottom_distance"
+            android:layout_marginLeft="@dimen/header_bottom_distance"
+            android:text="@string/deposit"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextBalance"
+            app:layout_constraintStart_toEndOf="@+id/editTextBalance"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBalance"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextAddMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginStart="@dimen/editText_distance"
+            android:layout_marginLeft="@dimen/editText_distance"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonDeposit"
+            app:layout_constraintStart_toEndOf="@+id/buttonDeposit"
+            app:layout_constraintTop_toTopOf="@+id/buttonDeposit"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:layout_marginBottom="@dimen/editText_distance"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonDeposit"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

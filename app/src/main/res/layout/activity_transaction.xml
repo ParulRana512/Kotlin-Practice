@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311">
+
+        <TextView
+            android:id="@+id/textViewTransferMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_money"
+            android:textSize="@dimen/header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037" />
+
+        <TextView
+            android:id="@+id/textViewFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_vertical_distance"
+            android:text="@string/from"
+            app:layout_constraintStart_toStartOf="@+id/textViewTransferMoney"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTransferMoney" />
+
+        <TextView
+            android:id="@+id/textViewTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_vertical_distance"
+            android:text="@string/to"
+            app:layout_constraintStart_toStartOf="@+id/textViewFrom"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFrom" />
+
+        <Spinner
+            android:id="@+id/spinnerFromAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/editText_distance"
+            android:ems="10"
+            android:hint="@string/account_no"
+            app:layout_constraintBottom_toTopOf="@+id/textViewTo"
+            app:layout_constraintStart_toEndOf="@+id/textViewFrom"
+            app:layout_constraintTop_toTopOf="@+id/textViewFrom"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/spinnerToAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/editText_distance"
+            android:ems="10"
+            android:hint="@string/account_no"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTo"
+            app:layout_constraintStart_toStartOf="@id/spinnerFromAccount"
+            app:layout_constraintTop_toTopOf="@+id/textViewTo"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <TextView
+            android:id="@+id/textViewAmountToDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:text="@string/amount_to_debit"
+            app:layout_constraintStart_toStartOf="@+id/textViewTo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTo" />
+
+        <EditText
+            android:id="@+id/editTextAmountToDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ems="3"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAmountToDebit"
+            app:layout_constraintStart_toEndOf="@+id/textViewAmountToDebit"
+            app:layout_constraintTop_toTopOf="@+id/textViewAmountToDebit" />
+
+        <Button
+            android:id="@+id/buttonTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_vertical_distance"
+            android:text="@string/transaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAmountToDebit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

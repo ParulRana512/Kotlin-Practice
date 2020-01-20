@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textViewSignUp"
+            app:layout_constraintStart_toStartOf="@+id/textViewSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSignUp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextUserName"
+            app:layout_constraintStart_toStartOf="@+id/editTextUserName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <Spinner
+            android:id="@+id/spinnerRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:entries="@array/Role"
+            app:layout_constraintEnd_toEndOf="@+id/editTextConfirmPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextConfirmPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:ems="10"
+            android:visibility="gone"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerRole"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/spinnerRole"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRole" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/header_bottom_distance"
+            android:layout_marginTop="@dimen/header_bottom_distance"
+            android:layout_marginRight="@dimen/header_bottom_distance"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNo" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/header_bottom_distance"
+            android:layout_marginRight="@dimen/header_bottom_distance"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonSubmit"
+            app:layout_constraintTop_toTopOf="@+id/buttonSubmit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
